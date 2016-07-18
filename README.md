@@ -14,6 +14,8 @@ Then run the executable with the number of unknowns and rank of the semi-separab
 
 where `N` is the number of unknowns, `m` is the rank of semi-separability and `c` is a character to denote, if we want to compare with usual method or not. The semi-separable matrix obtained is a random one. To change the code, to get your desired semi-separable matrix, edit the file `testESS.cpp`. The lines you might need to change include the definition of the matrices `U`, `V` to obtain the semi-separability, vector of diagonal entries `d` and right hand side vector `rhs`.
 
+[Dan](https://github.com/dfm) provides the python bindings, which also works for complex matrices (alpha and beta complex), and has kinldy made it available [here](https://github.com/dfm/ess).
+
 Examples
 --------
 To solve a `5000` by `5000` dense system with semi-separable rank being `4` and to compare with the usual dense solver, key in
